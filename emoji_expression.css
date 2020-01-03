@@ -1,0 +1,73 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.face {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: yellow;
+  border: 10px solid black;
+}
+
+.eye1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  transition: .5s;
+}
+.eye2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  transition: .5s;
+}
+
+/* .lips {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0px 9px 0px black;
+  position: absolute;
+  top: 120px;
+  left: 50px;
+  transform: rotate(180deg);
+} */
+
+.lips {
+    width: 130px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-top: 10px solid black;
+    position: absolute;
+    top: 130px;
+    left: 25px;
+  }
+
+.face:hover .eye1, .face:hover .eye2 {
+  width: 25px;
+  height: 40px;
+}
+
+.face:hover .lips {
+ border-top: 10px solid transparent;
+ border-bottom: 10px solid black;
+ top: 55px;
+}
